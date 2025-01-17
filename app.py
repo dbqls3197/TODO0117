@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 # MySQL 연결 설정
 db_config = {
-    'host': '10.0.66.21',
+    'host': '10.0.66.11',
     'user': 'dbqls',
     'password': '1234',
     'database': 'todo_db'
