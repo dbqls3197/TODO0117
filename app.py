@@ -6,8 +6,8 @@ app = Flask(__name__)
 
 # MySQL 연결 설정
 db_config = {
-    'host': 'localhost',
-    'user': 'sejong',
+    'host': '10.0.66.11',
+    'user': 'dbqls',
     'password': '1234',
     'database': 'todo_db'
 }
@@ -87,7 +87,7 @@ def get_todos():
         cursor.close()
         conn.close()
 
-# UPDATE - 할일 상태 변경
+# UPDATE - 할일 상태 변경1
 @app.route('/api/todos/<int:todo_id>', methods=['PUT'])
 def update_todo(todo_id):
     completed = request.json.get('completed')
